@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        #showcase{
+            background-color: #2e3c6d;
+            height: 500px;
+            width: 100%;
+        }
+        #how-it-works{
+            background-color: #fc997c;
+            padding: 10px;
+        }
+        .main-header
+        {
+            background-color: #fc997c;
+            padding: 8px 16px;
+        }
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 100px);
+            /* bu hesaplama header kısmında linkleri tam olarak oturup 
+            ekranı büyültüp küçültme yaparken alanın aşşağıya kaymaması 
+            için hesaplama yapar. */
+            text-align: right;
+        }
+        .main-nav__items{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .main-nav__item{
+            display: inline-block;
+            margin: 0 8px;
+        }
+        .main-header__logo{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        .main-nav__item a{/* kombinatory yazım şekli */
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">moviesapp</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">movies</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="showcase">
+            <h1>welcome to movieapp</h1>
+        </section>
+        <section id="how-it-works">
+            <h1>how its work</h1>
+        </section>
+    </main>
+</body>
+</html>

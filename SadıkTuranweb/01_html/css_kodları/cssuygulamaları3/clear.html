@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /*float direkt olarak blocka etki eder inline ile ilgilenmez*/
+            background-color: chocolate;
+        }
+        .box{
+            background-color: brown;
+            height: 150px;
+            width: 150px;
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div class="box">kutu1</div>
+        <div class="box">kutu2</div>
+        <div class="box">kutu3</div>
+
+        <!-- <div style="clear:both;"></div> -->
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci amet, aliquid excepturi iure eius vel unde in repellendus obcaecati quisquam porro neque blanditiis saepe ab dicta quae recusandae itaque pariatur?</p>
+
+</body>
+</html>

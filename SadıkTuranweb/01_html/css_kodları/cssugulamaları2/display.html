@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height: 60px;
+            width: 60px;
+            /* display: inline; */
+            /* inline sadece içindeki elemanların boyutu kadar yer kaplar */
+            /* display inline yazınca height ve width olanların bir önemi kalmaz */
+            display: inline-block;
+            /* yapılırsa width ve height ifadelerine verilen değerler
+            geçerli olur ancak bu yapılar alt alta değilde yan yana yazılır */
+        }
+        #first
+        {
+            background-color: red;
+        }
+        #second
+        {
+            background-color: green;
+        }
+        #third
+        {
+            background-color: blue;
+        }
+        a{
+            width: 100px;
+            display: block;
+            /* bu yapı linklerin alt alta yazılmasını sağlar */
+        }
+    </style>
+</head>
+<body>
+    <!-- display:none| inline| inline-block| block -->
+    <div id="container">
+        <div class="box" id="first">first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+
+    <div>
+        <a href="">home</a>
+        <a href="">movies</a>
+        <a href="">contact</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            background-color: blueviolet;
+            color: yellow;
+            padding: 15px;
+        }
+        h1{
+            margin: 0;
+        }
+        .col{
+            float: left;
+        }
+        .menu{
+            width: 25%;
+        }
+        .content{
+            width: 75%;
+        }
+        .menu p:hover{
+            cursor: pointer;/*üzerine gelince el işareti çıkar*/
+            background-color: #8267be;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .web-language{
+            background-color: purple;
+            color: white;
+            border: 1px solid;
+            margin: 10px;
+            padding: 5px;
+        }
+        .foot{
+            background-color: blueviolet;
+            color: yellow;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <h2>Header</h2>
+    </header>
+    <main class="clearfix">
+        <div class="menu col">
+            <p class="web-language">Html</p>
+            <p class="web-language">CSS</p>
+            <p class="web-language">Javascript</p>
+        </div>
+        <div class="content">
+            <h1>Komple Web Geliştirme Eğitimi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora saepe quaerat distinctio, itaque, impedit tempore adipisci blanditiis delectus praesentium accusamus! Blanditiis accusantium, ipsum reprehenderit vero quidem mollitia soluta ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, culpa perspiciatis. Quos recusandae vel molestias sequi ullam architecto ratione, dicta, exercitationem magni praesentium sapiente perspiciatis? Similique reprehenderit sapiente animi provident?</p>
+        </div>
+    </main>
+    <footer class="foot">
+        <h2>Footer</h2>
+    </footer>
+
+
+
+
+
+</body>
+</html>

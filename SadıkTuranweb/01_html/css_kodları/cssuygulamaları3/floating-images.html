@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 2px solid red;
+            padding: 5px;
+        }
+        img{
+            width: 300px;
+            float: left;
+            margin-right: 10px;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo soluta aliquid sint amet autem laudantium architecto praesentium esse! Reprehenderit nisi magni aperiam a deleniti sit omnis. Alias dignissimos optio harum.</p>
+
+    <p class="clearfix">
+        <img src="rowing.jpeg" alt="">
+        <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sapiente quidem similique temporibus, architecto nesciunt quia repellendus, ex quam sunt nam voluptates. Eum soluta et amet sequi porro sunt? Temporibus!
+        </span>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sapiente quidem similique temporibus, architecto nesciunt quia repellendus, ex quam sunt nam voluptates. Eum soluta et amet sequi porro sunt? Temporibus!
+        </span>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sapiente quidem similique temporibus, architecto nesciunt quia repellendus, ex quam sunt nam voluptates. Eum soluta et amet sequi porro sunt? Temporibus!
+        </span>
+    </p>
+
+
+</body>
+</html>

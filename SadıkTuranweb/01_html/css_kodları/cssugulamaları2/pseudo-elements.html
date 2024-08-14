@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            font-weight: bold;
+            color: brown;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+        }
+        p.about::first-line{
+            color: green;
+
+        }
+        p::first-letter{
+            font-size: 48px;
+        }
+        ::selection{
+            background-color: hotpink;
+        }
+        p::after{/* bu sayfanın sonuna istediğimiz şeyi eklememzi sağlar */
+            content: '\261D';
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--pseudo classes-->
+
+    <!--pseudo elements-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ea numquam sequi aliquid id reiciendis libero quod voluptatibus non voluptates, minima velit, minus illum deserunt quaerat inventore quae? Quam, voluptatibus!
+    </p>
+    <p class="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, exercitationem dignissimos magni quas modi, harum earum ad laudantium cumque, magnam atque. Animi ad ab maxime. Molestias ad dignissimos voluptatem vel?
+    </p>
+</body>
+</html>
